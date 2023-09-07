@@ -14,4 +14,7 @@ function changeColor(val) {
   <button @click="changeColor('')">auto</button>
   <button @click="changeColor('darkTheme')">dark</button>
   <button @click="changeColor('lightTheme')">light</button>
+  <div>
+    test
+  </div>
 </template>
