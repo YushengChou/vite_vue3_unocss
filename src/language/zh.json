@@ -1,0 +1,9 @@
+{
+  "code": "zh-TW",
+  "common": {
+    "label": {
+      "username": "用戶名",
+      "balance": "餘額"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "code": "en",
+  "common": {
+    "label": {
+      "username": "username",
+      "balance": "balance"
+    }
+  }
+}

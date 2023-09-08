@@ -20,6 +20,8 @@ export default defineConfig({
       'bg': '#ECF1FF',
       // 文字
       'text': '#333333',
+      // 圖片路徑
+      'pic_url': 'url(https://octodex.github.com/images/daftpunktocat-guy.gif)',
     },
   },
   presets: [
@@ -33,6 +35,7 @@ export default defineConfig({
             'secondary': '#3A3A3A',
             'bg': '#1C1C1C',
             'text': '#FFFFFF',
+            'pic_url': 'url(https://octodex.github.com/images/homercat.png)',
           },
         },
         lightTheme: {
@@ -41,6 +44,7 @@ export default defineConfig({
             'secondary': '#A19D85',
             'bg': '#FFF8D7',
             'text': '#000D70',
+            'pic_url': 'url(https://octodex.github.com/images/pusheencat.png)',
           },
         },
       }
