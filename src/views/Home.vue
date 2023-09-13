@@ -11,7 +11,7 @@ function changeColor(val) {
 </script>
 
 <template>
-  <div text-primary>primary</div>
+  <div text-primary font-aclonica><span w-5 h-5 block i-icon-park-airplane></span>primary</div>
   <div text-secondary>secondary</div>
   <div text-bg>bg</div>
   <div text-text>text</div>

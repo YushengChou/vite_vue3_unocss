@@ -49,8 +49,22 @@ export default defineConfig({
         },
       }
     }),
+    // npm之後即可使用attr寫法
     presetAttributify(),
-    presetIcons({}),
-    presetWebFonts({})
+    // 可以改變icon樣式
+    presetIcons({
+      scale: 1.2,
+    }),
+    // 將要加入的字體於此處設置
+    presetWebFonts({
+      // default provider
+      provider: 'google',
+      fonts: {
+        // these will extend the default theme
+        sans: 'Roboto',
+        // 加入自訂字體
+        aclonica: 'Aclonica',
+      }
+    })
   ],
 })
