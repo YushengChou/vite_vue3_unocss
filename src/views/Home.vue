@@ -1,12 +1,19 @@
 <script setup>
 import { useColorMode } from '@vueuse/core'
 import { useI18n } from 'vue-i18n'
+import { useGlobalStore } from '../stores/store'
 
 const mode = useColorMode()
 const { t, locale } = useI18n()
 
 function changeColor(val) {
   mode.value = val
+}
+
+const store = useGlobalStore()
+console.log(store.count);
+function test() {
+  store.increment()
 }
 </script>
 
@@ -20,8 +27,9 @@ function changeColor(val) {
   <button @click="changeColor('darkTheme')">dark</button>
   <button @click="changeColor('lightTheme')">light</button>
   <div>
-    test
+    store: {{ store.count }}
   </div>
+  <button @click="test">+1</button>
   <div>{{ $t('common.label.username') }}</div>
   <div>{{ t('common.label.balance') }}</div>
   <select v-model="locale">
