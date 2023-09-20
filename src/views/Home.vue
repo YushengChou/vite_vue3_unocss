@@ -28,6 +28,7 @@ function test() {
   <button @click="changeColor('lightTheme')">light</button>
   <div>
     store: {{ store.count }}
+    testWord
   </div>
   <button @click="test">+1</button>
   <div>{{ $t('common.label.username') }}</div>
