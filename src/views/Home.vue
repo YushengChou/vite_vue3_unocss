@@ -34,7 +34,7 @@ function test() {
   <div>{{ $t('common.label.username') }}</div>
   <div>{{ t('common.label.balance') }}</div>
   <select v-model="locale">
-    <option value="zh">zh</option>
-    <option value="en">en</option>
+    <option value="zh-TW">zh</option>
+    <option value="en-US">en</option>
   </select>
 </template>
