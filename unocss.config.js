@@ -1,14 +1,19 @@
-import { 
+import {
   defineConfig,
   presetAttributify,
-  presetUno ,
+  presetUno,
   presetIcons,
+  transformerDirectives,
 } from 'unocss'
 
 import presetWebFonts from '@unocss/preset-web-fonts'
 import presetTheme from '@minmin614/unocss-preset-theme'
 
 export default defineConfig({
+  // 要使用@apply
+  transformers: [
+    transformerDirectives(),
+  ],
   // 設置各樣式
   theme: {
     colors: {

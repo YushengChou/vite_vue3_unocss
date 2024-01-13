@@ -37,4 +37,12 @@ function test() {
     <option value="zh-TW">zh</option>
     <option value="en-US">en</option>
   </select>
+  <div class="test">
+    測試測試
+  </div>
 </template>
+<style scoped lang="less">
+.test {
+  @apply text-green;
+}
+</style>
